@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qareat Al Fenjan | Ladies Salon – Abu Dhabi Corniche</title>
+  <meta name="description" content="Qareat Al Fenjan Ladies Salon – Abu Dhabi Corniche. Hair, Nails, Makeup, Lashes, Waxing and VIP Packages. Book on WhatsApp: 0544045180"/>
+  <meta name="keywords" content="ladies salon abu dhabi, hair salon corniche, nail art abu dhabi, makeup abu dhabi, lashes abu dhabi, صالون ابوظبي"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--tiffany:#0ABAB5;--tiffany-dk:#089490;--tiffany-lt:#C5F0EE;--tiffany-bg:#E8FAF9;--gold:#C9A96E;--white:#FFFFFF;--dark:#1A1A2E;--text:#4A4A5A;--light-gray:#F8FFFE}
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+    body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff}
+    nav{position:fixed;top:0;width:100%;z-index:999;background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);border-bottom:2px solid var(--tiffany-lt);display:flex;align-items:center;justify-content:space-between;padding:12px 5%}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--tiffany);letter-spacing:1px}
+    .nav-logo span{color:var(--gold)}
+    .nav-links{display:flex;gap:28px;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--dark);font-size:.85rem;font-weight:500;transition:color .3s}
+    .nav-links a:hover{color:var(--tiffany)}
+    .nav-cta{background:var(--tiffany);color:#fff;padding:10px 22px;border-radius:30px;text-decoration:none;font-size:.85rem;font-weight:600;transition:all .3s}
+    .nav-cta:hover{background:var(--tiffany-dk);transform:scale(1.04)}
+    #hero{min-height:100vh;background:linear-gradient(135deg,#0ABAB5 0%,#07908C 50%,#055E5C 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 5% 80px;position:relative;overflow:hidden}
+    .hero-content{position:relative;z-index:1;max-width:760px}
+    .hero-badge{display:inline-block;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);padding:6px 20px;border-radius:30px;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px}
+    .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7vw,5rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:12px}
+    .hero-title span{color:var(--gold)}
+    .hero-arabic{font-size:1.3rem;color:rgba(255,255,255,.85);margin-bottom:20px;direction:rtl}
+    .hero-subtitle{font-size:1rem;color:rgba(255,255,255,.88);margin-bottom:14px;font-weight:300}
+    .hero-services{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:36px}
+    .hero-services span{background:rgba(255,255,255,.18);color:#fff;padding:6px 16px;border-radius:20px;font-size:.8rem;border:1px solid rgba(255,255,255,.3)}
+    .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .btn-primary{background:#fff;color:var(--tiffany);padding:14px 32px;border-radius:30px;text-decoration:none;font-weight:700;font-size:.9rem;transition:all .3s;box-shadow:0 4px 20px rgba(0,0,0,.15)}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-whatsapp{background:#25D366;color:#fff;padding:14px 32px;border-radius:30px;text-decoration:none;font-weight:600;font-size:.9rem;transition:all .3s;display:flex;align-items:center;gap:8px}
+    .btn-whatsapp:hover{background:#1ebe5d;transform:translateY(-2px)}
+    #stats{background:var(--tiffany);padding:40px 5%}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;max-width:900px;margin:0 auto}
+    .stat-item h3{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:#fff;font-weight:700}
+    .stat-item p{color:rgba(255,255,255,.85);font-size:.85rem;margin-top:4px}
+    section{padding:90px 5%}
+    .section-tag{display:inline-block;color:var(--tiffany);font-size:.75rem;letter-spacing:3px;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+    .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,2.8rem);color:var(--dark);font-weight:700;margin-bottom:14px}
+    .section-sub{color:var(--text);font-size:.95rem;max-width:560px;line-height:1.8;margin-bottom:50px}
+    .text-center{text-align:center}.text-center .section-sub{margin:0 auto 50px}
+    .divider{width:60px;height:3px;background:linear-gradient(90deg,var(--tiffany),var(--gold));border-radius:3px;margin:16px 0 20px}
+    .text-center .divider{margin:16px auto 20px}
+    #services{background:var(--light-gray)}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+    .service-card{background:#fff;border-radius:20px;padding:36px 28px;text-align:center;box-shadow:0 4px 24px rgba(10,186,181,.08);transition:all .3s;border:1px solid rgba(10,186,181,.1)}
+    .service-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(10,186,181,.18);border-color:var(--tiffany)}
+    .service-icon{width:70px;height:70px;border-radius:50%;background:var(--tiffany-bg);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:2rem}
+    .service-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--dark);margin-bottom:10px;font-weight:700}
+    .service-card p{font-size:.85rem;color:var(--text);line-height:1.7}
+    .service-tag{display:inline-block;margin-top:14px;background:var(--tiffany-lt);color:var(--tiffany-dk);padding:4px 14px;border-radius:12px;font-size:.75rem;font-weight:600}
+    #packages{background:#fff}
+    .packages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;max-width:1000px;margin:0 auto}
+    .pkg-card{border-radius:24px;padding:40px 30px;text-align:center;position:relative;overflow:hidden}
+    .pkg-card.basic{background:var(--tiffany-bg);border:2px solid var(--tiffany-lt)}
+    .pkg-card.vip{background:linear-gradient(135deg,var(--tiffany),var(--tiffany-dk));color:#fff}
+    .pkg-card.queen{background:linear-gradient(135deg,var(--gold),#a07840);color:#fff}
+    .pkg-badge{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.25);color:#fff;padding:3px 12px;border-radius:12px;font-size:.7rem;font-weight:600}
+    .pkg-card.basic .pkg-badge{background:var(--tiffany)}
+    .pkg-icon{font-size:2.8rem;margin-bottom:16px}
+    .pkg-card h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;margin-bottom:8px}
+    .pkg-card.basic h3{color:var(--dark)}
+    .pkg-card ul{list-style:none;margin:20px 0;text-align:left}
+    .pkg-card ul li{padding:6px 0;font-size:.85rem;border-bottom:1px solid rgba(255,255,255,.15);display:flex;align-items:center;gap:8px}
+    .pkg-card.basic ul li{border-color:rgba(10,186,181,.15);color:var(--text)}
+    .pkg-card ul li::before{content:"checkmark";color:#fff;font-weight:700;font-size:.75rem}
+    .pkg-card.basic ul li::before{color:var(--tiffany)}
+    .pkg-btn{display:inline-block;margin-top:20px;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;font-size:.85rem;transition:all .3s}
+    .pkg-card.basic .pkg-btn{background:var(--tiffany);color:#fff}
+    .pkg-card.vip .pkg-btn,.pkg-card.queen .pkg-btn{background:#fff;color:var(--dark)}
+    .pkg-btn:hover{transform:scale(1.05)}
+    #why{background:var(--tiffany-bg)}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+    .why-item{background:#fff;border-radius:16px;padding:28px 24px;text-align:center;box-shadow:0 2px 16px rgba(10,186,181,.07)}
+    .why-item .icon{font-size:2.2rem;margin-bottom:12px}
+    .why-item h4{font-weight:600;color:var(--dark);margin-bottom:8px;font-size:.95rem}
+    .why-item p{font-size:.82rem;color:var(--text);line-height:1.6}
+    #location{background:#fff}
+    .location-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:start}
+    .location-info h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--dark);margin-bottom:20px}
+    .loc-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}
+    .loc-icon{width:44px;height:44px;border-radius:50%;background:var(--tiffany-bg);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+    .loc-item h5{font-size:.82rem;color:var(--tiffany);font-weight:600;letter-spacing:1px;text-transform:uppercase}
+    .loc-item p{font-size:.9rem;color:var(--text);margin-top:3px;line-height:1.5}
+    .map-container{border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(10,186,181,.15);border:3px solid var(--tiffany-lt)}
+    .map-container iframe{width:100%;height:420px;border:none;display:block}
+    .whatsapp-float{position:fixed;bottom:28px;right:28px;z-index:1000;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.45);animation:pulse-wa 2.5s infinite;transition:transform .3s}
+    .whatsapp-float:hover{transform:scale(1.12)}
+    @keyframes pulse-wa{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.45)}50%{box-shadow:0 4px 36px rgba(37,211,102,.75)}}
+    #contact{background:var(--tiffany-bg)}
+    .contact-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+    .contact-links{display:flex;flex-direction:column;gap:14px;margin-top:20px}
+    .contact-link{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--dark);background:#fff;padding:14px 20px;border-radius:12px;font-size:.88rem;font-weight:500;box-shadow:0 2px 12px rgba(10,186,181,.08);transition:all .3s}
+    .contact-link:hover{background:var(--tiffany);color:#fff;transform:translateX(4px)}
+    .contact-link .cl-icon{font-size:1.3rem}
+    .book-form{background:#fff;border-radius:24px;padding:36px 32px;box-shadow:0 8px 40px rgba(10,186,181,.1)}
+    .book-form h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--dark);margin-bottom:22px;font-weight:700}
+    .form-group{margin-bottom:16px}
+    .form-group label{display:block;font-size:.78rem;font-weight:600;color:var(--tiffany);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border-radius:10px;border:1.5px solid var(--tiffany-lt);font-family:inherit;font-size:.88rem;color:var(--dark);outline:none;transition:border-color .3s}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--tiffany)}
+    .form-submit{width:100%;padding:14px;border-radius:30px;background:var(--tiffany);color:#fff;border:none;font-family:inherit;font-size:.95rem;font-weight:700;cursor:pointer;transition:all .3s;margin-top:6px}
+    .form-submit:hover{background:var(--tiffany-dk)}
+    footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 5% 30px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;margin-bottom:40px}
+    .footer-col h4{color:#fff;font-size:.9rem;font-weight:600;margin-bottom:16px;letter-spacing:1px}
+    .footer-col ul{list-style:none}
+    .footer-col ul li{margin-bottom:10px}
+    .footer-col ul li a{color:rgba(255,255,255,.65);text-decoration:none;font-size:.85rem;transition:color .3s}
+    .footer-col ul li a:hover{color:var(--tiffany)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;text-align:center;font-size:.8rem}
+    .footer-bottom span{color:var(--tiffany)}
+    @media(max-width:900px){.nav-links{display:none}.location-wrap,.contact-wrap,.footer-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/971544045180?text=Hi+I+want+to+book+an+appointment+at+Qareat+Al+Fenjan" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Book on WhatsApp">💬</a>
+
+<nav>
+  <div class="nav-logo">Qareat Al <span>Fenjan</span></div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#contact">Book</a></li>
+  </ul>
+  <a href="https://wa.me/971544045180?text=Hi+I+want+to+book" class="nav-cta" target="_blank">Book Now 💬</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">✦ Abu Dhabi Corniche · Al Hisn ✦</div>
+    <h1 class="hero-title">Qareat Al <span>Fenjan</span></h1>
+    <p class="hero-arabic">قريعة الفنجان | صالون سيدات — أبوظبي</p>
+    <p class="hero-subtitle">Where every visit is a luxurious experience</p>
+    <div class="hero-services">
+      <span>✂️ Hair</span><span>💅 Nails</span><span>💄 Makeup</span><span>👁️ Lashes</span><span>🌸 Waxing</span><span>👑 VIP Packages</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="https://wa.me/971544045180?text=Hi+I+want+to+book" class="btn-whatsapp" target="_blank">💬 WhatsApp to Book</a>
+    </div>
+  </div>
+</section>
+
+<div id="stats">
+  <div class="stats-grid">
+    <div class="stat-item"><h3>4K+</h3><p>Happy Clients</p></div>
+    <div class="stat-item"><h3>6+</h3><p>Years in Abu Dhabi</p></div>
+    <div class="stat-item"><h3>10+</h3><p>Expert Specialists</p></div>
+    <div class="stat-item"><h3>5★</h3><p>Google Rating</p></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="text-center">
+    <span class="section-tag">What We Offer</span>
+    <h2 class="section-title">Our Services</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Premium beauty services in the heart of Abu Dhabi Corniche — crafted for the modern Abu Dhabi woman.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card"><div class="service-icon">✂️</div><h3>Hair Styling</h3><p>Cuts, blowouts, color, Keratin, Balayage, highlights and full hair treatments using premium products.</p><span class="service-tag">Trending ✨</span></div>
+    <div class="service-card"><div class="service-icon">💅</div><h3>Nail Art</h3><p>Gel, acrylic, nail extensions, French manicure, nail art designs, pedicure and spa treatments.</p><span class="service-tag">Most Booked 🔥</span></div>
+    <div class="service-card"><div class="service-icon">💄</div><h3>Makeup</h3><p>Bridal, event, natural glow and full glam makeup by certified artists using high-end brands.</p><span class="service-tag">Special Events 👑</span></div>
+    <div class="service-card"><div class="service-icon">👁️</div><h3>Lashes</h3><p>Classic, hybrid, volume and mega-volume lash extensions. Lash lifts and tinting also available.</p><span class="service-tag">Book Fast 💫</span></div>
+    <div class="service-card"><div class="service-icon">🌸</div><h3>Waxing</h3><p>Full body, face, eyebrow shaping and threading. Gentle wax for sensitive skin with soothing care.</p><span class="service-tag">Available Daily</span></div>
+    <div class="service-card"><div class="service-icon">💆</div><h3>Facial &amp; Skin</h3><p>Deep cleansing facials, hydration treatments and skin care routines tailored to your skin type.</p><span class="service-tag">Glowing Skin ✨</span></div>
+  </div>
+</section>
+
+<section id="packages">
+  <div class="text-center">
+    <span class="section-tag">Exclusive Offers</span>
+    <h2 class="section-title">Salon Memberships</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Save more with our curated packages — designed for regular clients who love looking their best.</p>
+  </div>
+  <div class="packages-grid">
+    <div class="pkg-card basic"><div class="pkg-badge" style="background:var(--tiffany);color:#fff;">Starter</div><div class="pkg-icon">💎</div><h3>Silver Package</h3><ul><li>1x Hair Blowout</li><li>1x Manicure</li><li>1x Eyebrow Threading</li><li>Priority Booking</li><li>10% off all services</li></ul><a href="https://wa.me/971544045180?text=Silver+Package" class="pkg-btn" target="_blank">Book Now 💬</a></div>
+    <div class="pkg-card vip"><div class="pkg-badge">Most Popular</div><div class="pkg-icon">👑</div><h3>VIP Package</h3><ul><li>2x Hair Treatments</li><li>2x Gel Manicure + Pedicure</li><li>1x Full Makeup Session</li><li>1x Lash Lift or Extensions</li><li>20% off all services</li><li>Free consultation</li></ul><a href="https://wa.me/971544045180?text=VIP+Package" class="pkg-btn" target="_blank">Book Now 💬</a></div>
+    <div class="pkg-card queen"><div class="pkg-badge">Premium</div><div class="pkg-icon">🌟</div><h3>Queen Package</h3><ul><li>Unlimited Blowouts Monthly</li><li>4x Nail Art Sessions</li><li>2x Full Makeup</li><li>2x Lash Extensions</li><li>Full Body Waxing x2</li><li>25% off + Free Gift</li></ul><a href="https://wa.me/971544045180?text=Queen+Package" class="pkg-btn" target="_blank">Book Now 💬</a></div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="text-center">
+    <span class="section-tag">Why Choose Us</span>
+    <h2 class="section-title">The Qareat Difference</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="why-grid">
+    <div class="why-item"><div class="icon">📍</div><h4>Prime Location</h4><p>Steps from Abu Dhabi Corniche, Al Hisn and Khalidiya. Easy parking and access.</p></div>
+    <div class="why-item"><div class="icon">👩‍🎨</div><h4>Expert Team</h4><p>Certified specialists with years of experience in international techniques.</p></div>
+    <div class="why-item"><div class="icon">🌿</div><h4>Premium Products</h4><p>Only top-tier brands. Safe for sensitive skin. Allergy-tested.</p></div>
+    <div class="why-item"><div class="icon">🤝</div><h4>Ladies Only</h4><p>Private, comfortable and fully ladies-only environment at all times.</p></div>
+    <div class="why-item"><div class="icon">⚡</div><h4>Same-Day Booking</h4><p>WhatsApp us and we will fit you in today. Walk-ins welcome when available.</p></div>
+    <div class="why-item"><div class="icon">🌟</div><h4>5-Star Reviews</h4><p>Trusted by thousands of ladies across Abu Dhabi Corniche and Khalidiya.</p></div>
+  </div>
+</section>
+
+<section id="location">
+  <span class="section-tag">Find Us</span>
+  <h2 class="section-title">Visit Our Salon</h2>
+  <div class="divider"></div>
+  <div class="location-wrap">
+    <div class="location-info">
+      <h3>Heart of Abu Dhabi Corniche</h3>
+      <div class="loc-item"><div class="loc-icon">📍</div><div><h5>Address</h5><p>Al Hosn, Corniche Building C-18<br>Abu Dhabi, UAE</p></div></div>
+      <div class="loc-item"><div class="loc-icon">🕘</div><div><h5>Opening Hours</h5><p>Sat – Thu: 9:00 AM – 10:00 PM<br>Friday: 2:00 PM – 10:00 PM</p></div></div>
+      <div class="loc-item"><div class="loc-icon">📞</div><div><h5>Phone / WhatsApp</h5><p><a href="tel:+971544045180" style="color:var(--tiffany);text-decoration:none;font-weight:600;">+971 54 404 5180</a></p></div></div>
+      <div class="loc-item"><div class="loc-icon">📱</div><div><h5>Instagram</h5><p><a href="https://instagram.com/qareatal" style="color:var(--tiffany);text-decoration:none;font-weight:600;">@qareatal</a></p></div></div>
+      <a href="https://maps.google.com/?q=Qareat+Al+Fenjan+Ladies+Salon+Abu+Dhabi+Al+Hisn+Corniche" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--tiffany);color:#fff;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:600;font-size:.85rem;margin-top:10px;transition:all .3s">📍 Open in Google Maps</a>
+    </div>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.234!2d54.3533!3d24.4817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e665c3d6c4a5d%3A0x123456789!2sAl+Hosn+Corniche+Abu+Dhabi!5e0!3m2!1sen!2sae!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Qareat Al Fenjan Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-text">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Book Your Appointment</h2>
+      <div class="divider"></div>
+      <p style="font-size:.9rem;line-height:1.8;margin-bottom:20px">Ready to look and feel your best? Book directly on WhatsApp for instant confirmation — or fill the form and we will call you back.</p>
+      <div class="contact-links">
+        <a href="https://wa.me/971544045180?text=Hi+I+want+to+book+an+appointment" class="contact-link" target="_blank"><span class="cl-icon">💬</span><span>WhatsApp: +971 54 404 5180</span></a>
+        <a href="tel:+971544045180" class="contact-link"><span class="cl-icon">📞</span><span>Call: +971 54 404 5180</span></a>
+        <a href="https://instagram.com/qareatal" class="contact-link" target="_blank"><span class="cl-icon">📱</span><span>Instagram: @qareatal</span></a>
+        <a href="https://maps.google.com/?q=Qareat+Al+Fenjan+Abu+Dhabi" class="contact-link" target="_blank"><span class="cl-icon">📍</span><span>Al Hosn, Corniche C-18, Abu Dhabi</span></a>
+      </div>
+    </div>
+    <div class="book-form">
+      <h3>Quick Booking Request</h3>
+      <div class="form-group"><label>Your Name</label><input type="text" placeholder="e.g. Fatima Al Mansouri"/></div>
+      <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" placeholder="+971 xx xxx xxxx"/></div>
+      <div class="form-group"><label>Service</label><select><option>Hair Styling</option><option>Nail Art</option><option>Makeup</option><option>Lashes</option><option>Waxing</option><option>VIP Package</option><option>Queen Package</option></select></div>
+      <div class="form-group"><label>Preferred Date</label><input type="date"/></div>
+      <button class="form-submit" onclick="let name=this.closest('.book-form').querySelector('input').value;let phone=this.closest('.book-form').querySelectorAll('input')[1].value;let service=this.closest('.book-form').querySelector('select').value;window.open('https://wa.me/971544045180?text=Hi+I+want+to+book+'+service+'+Name:+'+name+'+Phone:+'+phone,'_blank')">Book via WhatsApp 💬</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="nav-logo" style="font-family:Cormorant Garamond,serif;font-size:1.6rem;font-weight:700;color:var(--tiffany);margin-bottom:14px">Qareat Al <span style="color:var(--gold)">Fenjan</span></div>
+      <p style="font-size:.85rem;line-height:1.8;max-width:300px">Abu Dhabi's premier ladies salon on the Corniche. Hair, Nails, Makeup, Lashes, Waxing and VIP Packages.</p>
+      <p style="margin-top:14px;font-size:.8rem">قريعة الفنجان | صالون سيدات أبوظبي</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Hair Styling</a></li>
+        <li><a href="#services">Nail Art</a></li>
+        <li><a href="#services">Makeup</a></li>
+        <li><a href="#services">Lashes</a></li>
+        <li><a href="#services">Waxing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://wa.me/971544045180" target="_blank">💬 WhatsApp</a></li>
+        <li><a href="tel:+971544045180">📞 +971 54 404 5180</a></li>
+        <li><a href="https://instagram.com/qareatal" target="_blank">📱 @qareatal</a></li>
+        <li><a href="#location">📍 Al Hosn, Corniche C-18</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>Qareat Al Fenjan Ladies Salon</span> · Abu Dhabi · All rights reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
